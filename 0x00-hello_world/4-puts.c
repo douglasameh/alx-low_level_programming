@@ -1,13 +1,14 @@
 #include <stdio.h>
 
 /**
- * main - C program that use the function puts
- * returned the value 0
- *
- */
+* main - puts
+*
+* Return: Always 0 (Successful)
+*/
 
-int main(void);
-{ 
-	puts("\"Programming is like building a multilingqual puzzle");
+int main(void)
+
+{
+	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
 }
