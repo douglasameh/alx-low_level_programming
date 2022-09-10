@@ -18,7 +18,7 @@ int main()
 			if (n2 != n1)
 			{
 				putchar((n1 / 10) + 48);
-				puychar((n1 % 10) + 48);
+				putchar((n1 % 10) + 48);
 				putchar(' ');
 				putchar((n2 / 10) + 48);
 				putchar((n2 % 10) + 48);
