@@ -7,28 +7,32 @@
  * 
  * Return: returns zero at the end
  */
-int main(void)
+int main()
 {
-	int i, p, j;
-	for (i = 0; i < 100; i++)
+	int n1 = 0, n2;
+	while(n1 <= 99)
 	{
-		for (p = 0; p < 100; j++)
+		n2 = n1;
+		while(n2 <= 99)
 		{
-			if (p > i)
+			if (n2 != n1)
 			{
-				putchar((i / 10) + '0');
-				putchar((i % 10) + '0');
+				putchar((n1 / 10) + 48);
+				puychar((n1 % 10) + 48);
 				putchar(' ');
-				putchar((p / 10) + '0');
-				putchar((p % 10) + '0');
-				if (i != 98)
+				putchar((n2 / 10) + 48);
+				putchar((n2 % 10) + 48);
+
+				if(n1 != 98 || n2 != 98)
 				{
 					putchar(',');
 					putchar(' ');
 				}
 			}
+			++n2;
 		}
+		++n1;
 	}
 	putchar('\n');
-	return (0);
+	return 0;
 }
