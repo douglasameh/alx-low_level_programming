@@ -37,5 +37,6 @@ int main(void)
 		++n1;
 	}
 	putchar('\n');
+
 	return (0);
 }
