@@ -1,11 +1,7 @@
-#include <stdio.h>
-#include <string.h>
-
-void trim(char *s); 
+#include <stdio.h> 
 
 /**
- * main - print possible combination of two 2-digit
- * numbers
+ * main - print possible combination of two 2-digit numbers
  * 
  * Return: returns zero at the end
  */
@@ -41,16 +37,4 @@ int main(void)
 	putchar('\n');
 
 	return (0);
-
-}
-
-void trim(char *s)
-{
-	int i = strlen(s) - 1;
-	while (i > 0)
-	{
-		if (s[i] == ' ' || s[i] == '\n' || s[i] == '\t') i --;
-		else break;
-	}
-	s[i + 1] = '\0';
 }
