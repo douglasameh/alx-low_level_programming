@@ -20,6 +20,7 @@ int main(int argc, char *argv[])
 				printf("%s\n", "Error");
 				return (1);
 			}
+		}
 	}
 	for (k = 1; k < argc; k++)
 	{
